@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+	font-family: helvetica;
+	color: white;
+    padding: 0;
+    margin: 0;
+    background: radial-gradient(#670d10, #092756);
+}
+
+/* homepage */
+#mt {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 2%;
+}
+
+#para {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* mapbox */
+#map {
+    height: 60vh;
+    width: 90vw;
+    text-align: center center;
+    margin-left: 20px;
+    margin-top: 5%;
+}
+
+/* homepage */
+#aeroplane{
+    position: absolute;
+    background-image: url(images/rocketship.png);
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 70px;
+    -webkit-animation: movingplane 10s linear infinite;
+    -moz-animation: movingplane 10s linear infinite;
+    -o-animation: movingplane 10s linear infinite;
+}
+
+@keyframes movingplane {
+	0% { 
+        margin-left: 100%;
+        top:300px;
+    }
+    29% { 
+        margin-left: 50%; 
+        top: 50px; 
+        -webkit-transform: rotate(20deg);
+	    -moz-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+	    transform: rotate(20deg);
+    }
+    31% {
+        -webkit-transform: rotate(-20deg);
+	    -moz-transform: rotate(-20deg);
+        -ms-transform: rotate(-20deg);
+	    transform: rotate(-20deg);
+    }
+    60% {
+        margin-left: 0%; 
+        top 300px;    
+    }
+    100% {
+        margin-left: -100%;
+        top: 300px;
+    }
+}
+@-webkit-keyframes movingplane {
+	0% { 
+        margin-left: 100%;
+        top:300px;
+    }
+    29% { 
+        margin-left: 50%; 
+        top: 50px; 
+        -webkit-transform: rotate(20deg);
+	    -moz-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+	    transform: rotate(20deg);
+    }
+    31% {
+        -webkit-transform: rotate(-20deg);
+	    -moz-transform: rotate(-20deg);
+        -ms-transform: rotate(-20deg);
+	    transform: rotate(-20deg);
+    }
+    60% {
+        margin-left: 0%; 
+        top 300px;    
+    }
+    100% {
+        margin-left: -100%;
+        top: 300px;
+    }
+}
+@-moz-keyframes movingplane {
+	0% { 
+        margin-left: 100%;
+        top:300px;
+    }
+    29% { 
+        margin-left: 50%; 
+        top: 50px; 
+        -webkit-transform: rotate(20deg);
+	    -moz-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+	    transform: rotate(20deg);
+    }
+    31% {
+        -webkit-transform: rotate(-20deg);
+	    -moz-transform: rotate(-20deg);
+        -ms-transform: rotate(-20deg);
+	    transform: rotate(-20deg);
+    }
+    60% {
+        margin-left: 0%; 
+        top 300px;    
+    }
+    100% {
+        margin-left: -100%;
+        top: 300px;
+    }
+}
+
+
+/*theme switcher*/
+#menu {
+    margin-left: 35%;
+}
+
+/*plot of hague/mumbai/london*/
+.marker {
+  background-image: url('https://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/map-marker-icon.png');
+  background-size: 100%;
+  background-repeat: no-repeat; 
+  width: 40px;
+  height: 80px;
+  
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 1.3em;
+  text-shadow: 0 0 5px black;
+}
+
+/*popout*/
+.mapboxgl-popup-content {
+    position: relative;
+    background: black !important;
+    color: white !important; 
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.1);
+    padding: 10px 10px 15px;
+    pointer-events: auto;
+}
+
+/*close button*/
+    .mapboxgl-popup-close-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 0;
+    border-radius: 0 3px 0 0;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+};
+
